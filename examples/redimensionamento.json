@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "Hipótese fictícia: SKU menor no laboratório",
+  "period_hours": 160,
+  "currencyCode": "USD",
+  "armRegionName": "brazilsouth",
+  "base": {
+    "label": "SKU atual do cenário fictício",
+    "resources": [
+      {"name": "teste-lab", "armSkuName": "Standard_B2ms", "quantity": 1, "hours": 160}
+    ]
+  },
+  "optimized": {
+    "label": "Hipótese a validar por desempenho e capacidade",
+    "resources": [
+      {"name": "teste-lab", "armSkuName": "Standard_B2s", "quantity": 1, "hours": 160}
+    ]
+  }
+}

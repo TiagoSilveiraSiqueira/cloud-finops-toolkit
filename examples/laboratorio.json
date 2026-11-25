@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "Laboratório fictício: comparar agenda de VMs",
+  "period_hours": 730,
+  "currencyCode": "USD",
+  "armRegionName": "brazilsouth",
+  "base": {
+    "label": "Laboratório disponível continuamente",
+    "resources": [
+      {"name": "app-lab", "armSkuName": "Standard_B2s", "quantity": 2, "hours": 730},
+      {"name": "apoio-lab", "armSkuName": "Standard_B1s", "quantity": 1, "hours": 730},
+      {"name": "teste-lab", "armSkuName": "Standard_B2ms", "quantity": 1, "hours": 160}
+    ]
+  },
+  "optimized": {
+    "label": "Hipótese: agenda aprovada para o laboratório",
+    "resources": [
+      {"name": "app-lab", "armSkuName": "Standard_B2s", "quantity": 2, "hours": 220},
+      {"name": "apoio-lab", "armSkuName": "Standard_B1s", "quantity": 1, "hours": 220},
+      {"name": "teste-lab", "armSkuName": "Standard_B2ms", "quantity": 1, "hours": 80}
+    ]
+  }
+}

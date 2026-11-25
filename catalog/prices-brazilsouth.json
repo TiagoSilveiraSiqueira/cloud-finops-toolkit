@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "public_price_snapshot",
+  "currencyCode": "USD",
+  "armRegionName": "brazilsouth",
+  "consulted_at": "2026-11-24T23:59:14Z",
+  "source": {
+    "api": "https://prices.azure.com/api/retail/prices",
+    "query_url": "https://prices.azure.com/api/retail/prices?%24filter=serviceName+eq+%27Virtual+Machines%27+and+armRegionName+eq+%27brazilsouth%27+and+%28armSkuName+eq+%27Standard_B1s%27+or+armSkuName+eq+%27Standard_B2s%27+or+armSkuName+eq+%27Standard_B2ms%27%29+and+priceType+eq+%27Consumption%27&currencyCode=%27USD%27",
+    "http_status": 200
+  },
+  "selection_criteria": [
+    "Consumption only; Reservation and DevTestConsumption excluded",
+    "Exclude Windows, Spot, Low Priority, LowPriority and Reservation in product, SKU and meter names",
+    "meterName == skuName == armSkuName without Standard_ prefix",
+    "USD, brazilsouth, 1 Hour, tierMinimumUnits == 0, primary meter region only"
+  ],
+  "items": [
+    {
+      "armSkuName": "Standard_B1s",
+      "productName": "Virtual Machines BS Series",
+      "meterName": "B1s",
+      "skuName": "B1s",
+      "unitOfMeasure": "1 Hour",
+      "currencyCode": "USD",
+      "retailPrice": "0.0168",
+      "effectiveStartDate": "2025-10-01T00:00:00Z",
+      "armRegionName": "brazilsouth",
+      "type": "Consumption",
+      "tierMinimumUnits": "0.0",
+      "source": "https://prices.azure.com/api/retail/prices?%24filter=serviceName+eq+%27Virtual+Machines%27+and+armRegionName+eq+%27brazilsouth%27+and+%28armSkuName+eq+%27Standard_B1s%27+or+armSkuName+eq+%27Standard_B2s%27+or+armSkuName+eq+%27Standard_B2ms%27%29+and+priceType+eq+%27Consumption%27&currencyCode=%27USD%27",
+      "consulted_at": "2026-11-24T23:59:14Z"
+    },
+    {
+      "armSkuName": "Standard_B2ms",
+      "productName": "Virtual Machines BS Series",
+      "meterName": "B2ms",
+      "skuName": "B2ms",
+      "unitOfMeasure": "1 Hour",
+      "currencyCode": "USD",
+      "retailPrice": "0.134",
+      "effectiveStartDate": "2025-10-01T00:00:00Z",
+      "armRegionName": "brazilsouth",
+      "type": "Consumption",
+      "tierMinimumUnits": "0.0",
+      "source": "https://prices.azure.com/api/retail/prices?%24filter=serviceName+eq+%27Virtual+Machines%27+and+armRegionName+eq+%27brazilsouth%27+and+%28armSkuName+eq+%27Standard_B1s%27+or+armSkuName+eq+%27Standard_B2s%27+or+armSkuName+eq+%27Standard_B2ms%27%29+and+priceType+eq+%27Consumption%27&currencyCode=%27USD%27",
+      "consulted_at": "2026-11-24T23:59:14Z"
+    },
+    {
+      "armSkuName": "Standard_B2s",
+      "productName": "Virtual Machines BS Series",
+      "meterName": "B2s",
+      "skuName": "B2s",
+      "unitOfMeasure": "1 Hour",
+      "currencyCode": "USD",
+      "retailPrice": "0.0672",
+      "effectiveStartDate": "2025-10-01T00:00:00Z",
+      "armRegionName": "brazilsouth",
+      "type": "Consumption",
+      "tierMinimumUnits": "0.0",
+      "source": "https://prices.azure.com/api/retail/prices?%24filter=serviceName+eq+%27Virtual+Machines%27+and+armRegionName+eq+%27brazilsouth%27+and+%28armSkuName+eq+%27Standard_B1s%27+or+armSkuName+eq+%27Standard_B2s%27+or+armSkuName+eq+%27Standard_B2ms%27%29+and+priceType+eq+%27Consumption%27&currencyCode=%27USD%27",
+      "consulted_at": "2026-11-24T23:59:14Z"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Erro em um exemplo
+description: Relate uma dificuldade reproduzível com dados de laboratório.
+title: "[Exemplo]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use dados fictícios ou uma fonte pública. Remova credenciais e informações internas antes de enviar."
+  - type: input
+    id: version
+    attributes:
+      label: Versão do Python e do projeto
+      placeholder: "Python 3.13, versão v0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir
+      description: "Informe o exemplo incluído e os passos. Use somente dados de laboratório."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+      description: "Qual comportamento ou critério você esperava verificar?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado observado
+      description: "Descreva a diferença usando uma saída fictícia ou já pública."
+    validations:
+      required: true
